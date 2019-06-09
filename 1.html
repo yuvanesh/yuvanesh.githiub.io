@@ -8,8 +8,9 @@ $.ajax({
     type : 'GET',
     dataType:'json',
     success : function(data) {              
-        var x= JSON.stringify(data);
-        document.getElementById('test').innerHTML = "THE FOLLOWING DATA IS IN ATTACKER CONTROL:      "+ x;
+        #var x= JSON.stringify(data);
+	#document.getElementById('test').innerHTML = "THE FOLLOWING DATA IS IN ATTACKER CONTROL:      "+ x;
+        document.getElementById('test').innerHTML = "THE FOLLOWING DATA IS IN ATTACKER CONTROL:      "+ data;
     },
     xhrFields: {
        withCredentials: true
