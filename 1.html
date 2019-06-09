@@ -10,7 +10,6 @@ $.ajax({
     success : function(data) {              
         //var x= JSON.stringify(data);
 	//document.getElementById('test').innerHTML = "THE FOLLOWING DATA IS IN ATTACKER CONTROL:      "+ x;
-	document.getElementById('test').innerHTML =  "THE FOLLOWING DATA IS IN ATTACKER CONTROL      ";
         document.getElementById('test').innerHTML =  data;
 	alert("successfully hacked:" + data)
     },
@@ -31,6 +30,7 @@ $( document ).ready(function() {
 	
 </head>
 <body>
+<h1>THE FOLLOWING DATA IS IN ATTACKER CONTROL</h1>
 <pre id="test"></pre>
 </body>
 </html>
