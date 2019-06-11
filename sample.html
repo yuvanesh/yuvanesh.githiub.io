@@ -1,0 +1,27 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+function aj() {
+$.ajax({
+    url : 'https://shop.lululemon.com/secure/account/profilelandingpage.jsp',
+    type : 'GET',
+    dataType:'html',
+    success : function(data) {              
+    },
+    xhrFields: {
+       withCredentials: true
+    }
+});
+}
+
+$( document ).ready(function() {
+    aj();
+});
+</script>
+	
+</head>
+<body>
+<pre id="test"></pre>
+</body>
+</html>
