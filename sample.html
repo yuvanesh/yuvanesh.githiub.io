@@ -9,9 +9,16 @@ $.ajax({
     dataType:'html',
     success : function(data) {
 	document.getElementById('test').innerHTML =  data;
-	var email = document.getElementsByClassName('profile-content')[0].textContent
-	var card = document.getElementsByClassName('credit-card')
+	var email_id = 'not present'
 	var card_detail = 'not present'
+	
+	var email = document.getElementsByClassName('profile-content')
+	var card = document.getElementsByClassName('credit-card')
+	
+	if(email.length > 0) {
+	    email_id = email[0].textContent
+	}
+	
 	if(card.length > 0) {
 	    card_detail = card[0].textContent
 	}
